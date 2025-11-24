@@ -1,6 +1,8 @@
 # RouterOS 7.20.4
 # Original idea: @kenzo, Mikrotik Forum
 
+/ip/firewall/filter/
+
 #forward chain:
 add action=jump chain=forward comment="custom: evaluate invalid forward" connection-state=invalid jump-target=invalidforward
 
